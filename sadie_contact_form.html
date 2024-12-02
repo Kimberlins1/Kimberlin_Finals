@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            background-color: #eeecde; 
+            margin: 0;
+        }
+        
+        .header {
+            background: radial-gradient(circle, #7300bb, #f000d8);
+            text-align: center;
+            width: 100%;
+            padding: 50px 0;
+        }
+        
+        h1 {
+            color: #f000d8;
+            font-size: 5em;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #de8eca;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        a:hover {
+            color: #f000d8;
+        }
+        
+        a:active {
+            color: yellow;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #de8eca;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 5px;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        
+        h1, h2 {
+            color: #8c10d3c8;
+        }
+        
+        table {
+            border: 4px solid #f000d8;
+            border-radius: 10px;
+            text-align: center;
+            border-collapse: separate;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+        }
+        
+        td {
+            border: 2px solid #f000d8;
+            padding: 10px;
+        }
+        
+        .sticky-container {
+            position: sticky;
+            top: 0;
+            background: radial-gradient(circle, #7300bb, #f000d8);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+       
+    </style>
+</head>
+<body bgcolor="#f7e9b9">
+
+
+    <div class="sticky-container">
+        <p align="center">
+            <a href="Sadie_website_home.html">Home</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sadie_animals.html">Interests</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sadie_projects.html">Projects</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sadie_resume.html">Experience</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="sadie_contact_form.html">Contact</a>
+        </p>
+    </div>
+
+    <h1 style="color:#f000d8;text-align:center;font-size:5em;">Contact Me</h1>
+    <br>
+    <div align="center"> 
+        <a href="/https://www.linkedin.com/in/sadie-kimberlin">LinkedIn</a>
+    </div>
+    
+
+    <h1 style="text-align:center;color:#f000d8;font-size: 3em;">Send me your comments </h1>
+    <p>
+        <table>
+            <tr>
+                <form method="post" action="sadie_thank_you.html">
+                    <td width="1920">
+                        <label style="font-size: 25px;" for="uname"><strong>Name:</strong></label>
+                        <input type="text" name="uname" id="uname" required> 
+                        <br><br>
+                        
+                        <label style="font-size: 25px; for="uemail"><strong>Email ID:</strong></label>
+                        <input type="text" name="uemail" id="uemail" required>
+                        <br><br>
+                        
+                        <label style="font-size: 25px; for="points"><strong>Rate Your Experience:</strong></label>
+                            <input type="range" id="points" name="points" min="0" max="10">
+                                <br><br>
+                        <label style="font-size: 25px; for="comments"><strong>Comments:</strong></label>
+                                <br><br>
+                         <textarea style="border: 5px solid #f000d8; border-radius: 3px;" name="comments" rows="10" cols="50"></textarea>
+                                <br><br>
+                        <input class="button" type="submit" name="Submit" value="Submit">
+                        <input class="button" type="reset" name="reset" value="Reset">
+                    </td>
+                </form>
+            </tr>
+        </table>
+    </p>
+
+</body>
+</html>
